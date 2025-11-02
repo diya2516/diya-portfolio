@@ -177,7 +177,7 @@ nav {
 
 /* ===== ABOUT ===== */
 .about {
-  padding: 80px 50px;
+  padding: 60px 50px 80px;
   text-align: center;
 }
 
@@ -323,9 +323,12 @@ nav {
   transition: all 0.3s ease;
 }
 
-.project-card .btn:hover {
+.project-card .btn:hover,
+.project-card .btn:active {
   background: #00adb5;
   color: #fff;
+  box-shadow: 0 0 15px #00adb5; 
+  transform: scale(1.05);
 }
 
 
@@ -333,6 +336,8 @@ nav {
 .internship {
   text-align: center;
   padding: 70px 40px;
+  display: flex;                
+  justify-content: center;
 }
 
 .internship h2 {
@@ -378,11 +383,13 @@ nav {
   transition: all 0.3s ease;
 }
 
-.internship-card .btn:hover {
+.internship-card .btn:hover,
+.internship-card .btn:active {
   background: #00adb5;
   color: #fff;
+  box-shadow: 0 0 15px #00adb5; 
+  transform: scale(1.05);
 }
-
 /* ===== CONTACT ===== */
 .contact {
   background: transparent;
@@ -493,6 +500,7 @@ footer:hover {
   transform: translateY(-5px);
   box-shadow: 0 0 15px #00adb5;
 }
+
 
 
 
