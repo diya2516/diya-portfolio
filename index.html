@@ -1,20 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Diya Thomre | Portfolio</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Header -->
   <header>
     <nav>
       <h2 class="logo">Diya<span>Thomre</span></h2>
       <ul class="nav-links">
         <li><a href="#home" class="active">Home</a></li>
-        <li><a href="#about">About</a></li>
+        <li><a href="#about">About Me</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#education">Education</a></li>
         <li><a href="#projects">Projects</a></li>
@@ -24,7 +23,6 @@
     </nav>
   </header>
 
-  <!-- Home -->
   <section id="home" class="home">
     <div class="home-container">
       <div class="img-box">
@@ -35,11 +33,11 @@
         <h1>I'm <span class="highlight">Diya Thomre</span></h1>
         <p>Aspiring Python Full-Stack Developer passionate about creating dynamic web applications and solving real-world problems through clean, efficient code.</p>
         <div class="icon-buttons">
-          <a href="https://drive.google.com/file/d/1g_LCCb3Gw0sPtBv5zrHmB3cVnsfZbJLQ/view?usp=sharing" class="icon-btn" title="Download CV" target="_blank">
+          <a href="https://drive.google.com/file/d/1g_LCCb3Gw0sPtBv5zrHmB3cVnsfZbJLQ/view?usp=sharing" download class="icon-btn" title="Download CV">
             <i class="fa-solid fa-download"></i>
           </a>
-          <a href="mailto:diyathomre@gmail.com" class="icon-btn" title="Email">
-            <i class="fa-solid fa-envelope"></i>
+          <a href="#contact" class="icon-btn" title="Contact">
+            <i class="fa-solid fa-user"></i>
           </a>
           <a href="http://www.linkedin.com/in/diya-thomre-731341295" target="_blank" class="icon-btn" title="LinkedIn">
             <i class="fa-brands fa-linkedin-in"></i>
@@ -47,23 +45,27 @@
           <a href="https://github.com/diya2516" target="_blank" class="icon-btn" title="GitHub">
             <i class="fa-brands fa-github"></i>
           </a>
+          <a href="diyathomre@gmail.com" class="icon-btn" title="Gmail">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- About -->
   <section id="about" class="about">
     <h2>About Me</h2>
     <p>
       I’m Diya Thomre, a Computer Science and Information Technology graduate passionate about building 
       smart and efficient web applications. I enjoy working with Python, SQL, HTML, CSS, and JavaScript 
-      to create solutions that are clean, functional, and user-friendly. I love continuous learning and 
-      exploring emerging technologies like Machine Learning and Data Analytics.
+      to create solutions that are clean, functional, and user-friendly. I believe in continuous learning 
+      and love turning ideas into real, impactful projects. Beyond coding, I’m interested in exploring 
+      emerging technologies like Machine Learning and Data Analytics to make data-driven decisions and 
+      innovative systems. My goal is to become a skilled Software Engineer who not only writes efficient 
+      code but also creates digital experiences that solve real-world problems.
     </p>
   </section>
 
-  <!-- Skills -->
   <section id="skills" class="skills">
     <h2>Skills</h2>
     <div class="skill-boxes">
@@ -77,64 +79,75 @@
     </div>
   </section>
 
-  <!-- Education -->
   <section id="education" class="education">
     <h2>Education</h2>
-    <div class="edu-card">
-      <h3>B.Tech in Computer Science and Information Technology</h3>
-      <p>Chalapathi Institute of Engineering and Technology</p>
-      <p><strong>Year:</strong> 2021 – 2025</p>
+    <div class="edu-list">
+      <div class="edu-card">
+        <h3>B.Tech in Computer Science and Information Technology</h3>
+        <p>Chalapathi Institute of Engineering and Technology</p>
+        <p><strong>Year:</strong> 2021 – 2025</p>
+      </div>
     </div>
   </section>
 
-  <!-- Projects -->
   <section id="projects" class="projects">
     <h2>Projects</h2>
     <div class="project-list">
       <div class="project-card">
-        <h3>🛍 Autonomous Commerce Platform</h3>
-        <p>AI-driven platform enabling automated checkout and personalized shopping experiences.</p>
-        <a href="https://github.com/diya2516/Autonomous-commerce-platform-digital-retail-through-seamless-shopping.git" target="_blank" class="btn">View Project</a>
+        <div class="icon-circle">🛍</div>
+        <h1>Autonomous Commerce Platform</h1>
+        <p>AI-driven platform enabling automated checkout and personalized shopping experiences, transforming digital retail through intelligent automation.</p>
+        <a href="https://github.com/diya2516/Autonomous-commerce-platform-digital-retail-through-seamless-shopping.git" target="_blank" class="btn">View on GitHub</a>
       </div>
+
       <div class="project-card">
-        <h3>🏦 Bank Management System</h3>
-        <p>Python & SQL-based system for managing accounts, transactions, and records efficiently.</p>
-        <a href="https://github.com/diya2516/bank-management-system.git" target="_blank" class="btn">View Project</a>
+        <div class="icon-circle">🏦</div>
+        <h1>Bank Management System</h1>
+        <p>Python and SQL-based system for managing accounts, transactions, and records with accuracy, security, and simplicity.</p>
+        <a href="https://github.com/diya2516/bank-management-system.git" target="_blank" class="btn">View on GitHub</a>
       </div>
+
       <div class="project-card">
-        <h3>🧠 Quiz System</h3>
-        <p>Interactive system for attempting quizzes, tracking scores, and improving performance.</p>
-        <a href="https://github.com/diya2516/Quiz-System.git" target="_blank" class="btn">View Project</a>
+        <div class="icon-circle">🧠</div>
+        <h1>Quiz System</h1>
+        <p>Interactive Quiz System for attempting quizzes, viewing scores, and tracking performance effectively.</p>
+        <a href="https://github.com/diya2516/Quiz-System.git" target="_blank" class="btn">View on GitHub</a>
       </div>
     </div>
   </section>
 
-  <!-- Internships -->
-  <section id="internships" class="internships">
+  <section id="internships" class="internship">
     <h2>Internships</h2>
-    <div class="internship-card">
-      <h3>🚆 Data Analytics Using Python for Machine Learning</h3>
-      <p>Developed ML models analyzing railway data to predict delays and improve efficiency.</p>
-      <a href="https://github.com/diya2516/Indian-Railway-System-.git" target="_blank" class="btn">View Project</a>
+    <div class="internship-list">
+      <div class="internship-card">
+        <div class="icon-circle">🚆</div>
+        <h1>Data Analytics Using Python for Machine Learning</h1>
+        <p>Developed a machine learning project analyzing railway data to predict delays and improve operational efficiency, gaining real-world data analytics experience.</p>
+        <a href="https://github.com/diya2516/Indian-Railway-System-.git" target="_blank" class="btn">View on GitHub</a>
+      </div>
     </div>
   </section>
 
-  <!-- Contact -->
   <section id="contact" class="contact">
     <h2>Contact Me</h2>
     <form id="contact-form">
-      <input type="text" id="name" placeholder="Your Name" required>
-      <input type="email" id="email" placeholder="Your Email" required>
-      <textarea id="message" rows="4" placeholder="Your Message" required></textarea>
+      <div class="input-box">
+        <input type="text" id="name" placeholder="Your Name" required>
+      </div>
+      <div class="input-box">
+        <input type="email" id="email" placeholder="Your Email" required>
+      </div>
+      <div class="input-box">
+        <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+      </div>
       <button type="submit" class="btn">Send Message</button>
     </form>
   </section>
 
-  <!-- Footer -->
   <footer>
     <p>© 2025 Diya Thomre | All Rights Reserved</p>
   </footer>
 
   <script src="script.js"></script>
-</body>
+  </body>
 </html>
