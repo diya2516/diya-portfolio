@@ -305,22 +305,6 @@ nav {
   box-shadow: 0 0 15px #00adb5;
 }
 
-.project-card .btn {
-  border: 1px solid #00adb5;
-  color: #00adb5;
-  background: transparent;
-  text-decoration: none;
-  padding: 8px 18px;
-  font-size: 16px;
-  border-radius: 5px;
-  transition: all 0.3s ease;
-}
-
-.project-card .btn:hover {
-  background: #00adb5;
-  color: #fff;
-}
-
 /* ===== INTERNSHIPS ===== */
 .internship {
   text-align: center;
@@ -337,7 +321,7 @@ nav {
   border: 1px solid #00adb5;
   border-radius: 10px;
   padding: 25px 35px;
-  width: 350px;
+  width: 350px; /* same width as .project-card */
   background-color: transparent;
   text-align: center;
   margin: 10px;
@@ -349,8 +333,10 @@ nav {
   transform: translateY(-5px);
   box-shadow: 0 0 15px #00adb5;
 }
-
+.project-card .btn,
 .internship-card .btn {
+  display: inline-block;
+  margin-top: 15px; /* ensures button stays below the content */
   border: 1px solid #00adb5;
   color: #00adb5;
   background: transparent;
@@ -359,12 +345,14 @@ nav {
   font-size: 16px;
   border-radius: 5px;
   transition: all 0.3s ease;
+  position: relative;
 }
-
+.project-card .btn:hover
 .internship-card .btn:hover {
   background: #00adb5;
   color: #fff;
 }
+
 
 /* ===== CONTACT ===== */
 .contact {
@@ -443,6 +431,41 @@ footer:hover {
   .home-content p { font-size: 16px; }
   .project-card, .internship-card { width: 100%; }
 }
+/* Fix for View on GitHub button position */
+.project-card .btn,
+.internship-card .btn {
+  display: inline-block;
+  margin-top: 15px; /* ensures button stays below the content */
+  border: 1px solid #00adb5;
+  color: #00adb5;
+  background: transparent;
+  text-decoration: none;
+  padding: 8px 18px;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+/* Make internship boxes same width as project boxes */
+.internship-card {
+  border: 1px solid #00adb5;
+  border-radius: 10px;
+  padding: 25px 35px;
+  width: 350px; /* same width as .project-card */
+  background-color: transparent;
+  text-align: center;
+  margin: 10px;
+  transition: all 0.3s ease;
+}
+
+.internship-card:hover,
+.internship-card:active {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px #00adb5;
+}
+
+
 
 
 
