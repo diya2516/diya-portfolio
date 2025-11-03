@@ -132,6 +132,7 @@ nav {
   line-height: 1.5;
   color: #d1d5db;
 }
+/* ICON BUTTONS SECTION */
 .icon-buttons {
   display: flex;
   flex-wrap: wrap;
@@ -139,31 +140,24 @@ nav {
   gap: 15px;
   margin-top: 15px;
 }
+
+/* Each icon inside a circle */
 .icon-btn {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 40px;
+  width: 40px;         /* smaller circle */
   height: 40px;
   border-radius: 50%;
   border: 2px solid #00adb5;
   color: #00adb5;
-  font-size: 18px;
+  font-size: 18px;     /* icon size */
   text-decoration: none;
   background: transparent;
   transition: all 0.3s ease;
-  position: relative;
 }
 
-.icon-btn span {
-  font-size: 12px;
-  color: #00adb5;
-  margin-top: 5px;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
+/* Hover effect for icons */
 .icon-btn:hover,
 .icon-btn:active {
   background: #00adb5;
@@ -172,11 +166,10 @@ nav {
   transform: scale(1.1);
 }
 
-.icon-btn:hover span {
-  opacity: 1;
-  color: #fff;
+/* Optional: add spacing between section and icons */
+.home .icon-buttons {
+  margin-top: 20px;
 }
-
 
 /* ===== ANIMATIONS ===== */
 @keyframes slideLeft {
@@ -605,6 +598,7 @@ footer:hover {
   .home-content p { font-size: 16px; }
   .project-card, .internship-card { width: 100%; }
 }
+
 
 
 
